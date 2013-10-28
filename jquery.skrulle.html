@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: #ccc;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hi {
+            background-color: rgba(255, 255, 255, .5);
+            height: 4em;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            transition: top .3s;
+        }
+
+        .down .hi {
+            top: -4em;
+        }
+
+        .content {
+            height: 400em;
+        }
+    </style>
+</head>
+<body>
+    <header class="hi"></header>
+    <div class="content"></div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="skrulle.jquery.js"></script>
+    <script>
+        $(function(){
+            $(window).skrulle();
+        });
+    </script>
+</body>
+</html>
